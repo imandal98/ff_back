@@ -719,6 +719,7 @@ export interface ApiProductListProductList extends Schema.CollectionType {
     singularName: 'product-list';
     pluralName: 'product-lists';
     displayName: 'product_list';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -730,6 +731,9 @@ export interface ApiProductListProductList extends Schema.CollectionType {
       'api::category.category'
     >;
     title: Attribute.String;
+    description: Attribute.Text;
+    image: Attribute.Media;
+    price: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
